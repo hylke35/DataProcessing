@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "Country": {
+              "type": "string"
+            },
+            "Region": {
+              "type": "string"
+            },
+            "Population": {
+              "type": "integer"
+            },
+            "Area": {
+              "type": "integer"
+            },
+            "Population_Density": {
+              "type": "number"
+            },
+            "Coastline": {
+              "type": "number"
+            },
+            "Net_Migration": {
+              "type": "number"
+            },
+            "Infant_Mortality": {
+              "type": "number"
+            },
+            "GDP": {
+              "type": "integer"
+            },
+            "Literacy": {
+              "type": "number"
+            },
+            "Phones": {
+              "type": "number"
+            },
+            "Arable": {
+              "type": "number"
+            },
+            "Crops": {
+              "type": "number"
+            },
+            "Other": {
+              "type": "number"
+            },
+            "Climate": {
+              "type": "integer"
+            },
+            "Birthrate": {
+              "type": "number"
+            },
+            "Deathrate": {
+              "type": "number"
+            },
+            "Agriculture": {
+              "type": "number"
+            },
+            "Industry": {
+              "type": "number"
+            },
+            "Service": {
+              "type": "number"
+            },
+            "Score": {
+              "type": "number"
+            },
+            "Support": {
+              "type": "number"
+            },
+            "Freedom": {
+              "type": "number"
+            },
+            "Generosity": {
+              "type": "number"
+            },
+            "Corruption": {
+              "type": "number"
+            },
+            "Year": {
+              "type": "integer"
+            },
+            "Sex": {
+              "type": "string"
+            },
+            "Age": {
+              "type": "integer"
+            },
+            "Suicide_no": {
+              "type": "integer"
+            },
+            "Population_PerYear": {
+              "type": "integer"
+            },
+            "Suicide_rate": {
+              "type": "number"
+            },
+            "Country_year": {
+              "type": "string"
+            },
+            "HDI_year": {
+              "type": "integer"
+            },
+            "GDP_year": {
+              "type": "string"
+            },
+            "GDP_capita": {
+              "type": "integer"
+            },
+            "Generation": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Country",
+            "Region",
+            "Population",
+            "Area",
+            "Population_Density",
+            "Coastline",
+            "Net_Migration",
+            "Infant_Mortality",
+            "GDP",
+            "Literacy",
+            "Phones",
+            "Arable",
+            "Crops",
+            "Other",
+            "Climate",
+            "Birthrate",
+            "Deathrate",
+            "Agriculture",
+            "Industry",
+            "Service",
+            "Score",
+            "Support",
+            "Freedom",
+            "Generosity",
+            "Corruption",
+            "Year",
+            "Sex",
+            "Age",
+            "Suicide_no",
+            "Population_PerYear",
+            "Suicide_rate",
+            "Country_year",
+            "HDI_year",
+            "GDP_year",
+            "GDP_capita",
+            "Generation"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

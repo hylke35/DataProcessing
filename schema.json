@@ -1,0 +1,425 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/countries.json",
+  "type": "object",
+  "title": "Countries Schema",
+  "description": "Schema for Countries",
+  "required": [
+    "Countries"
+  ],
+  "properties": {
+    "Countries": {
+      "$id": "#/properties/Countries",
+      "type": "array",
+      "title": "The Countries Schema",
+      "countries": {
+        "$id": "#/properties/Countries/countries",
+        "type": "object",
+        "title": "The Country Schema",
+        "required": [
+          "Country",
+          "Region",
+          "Population",
+          "Area",
+          "Population_Density",
+          "Coastline",
+          "Net_Migration",
+          "Infant_Mortality",
+          "GDP",
+          "Literacy",
+          "Phones",
+          "Arable",
+          "Crops",
+          "Other",
+          "Climate",
+          "Birthrate",
+          "Deathrate",
+          "Agriculture",
+          "Industry",
+          "Service",
+          "Score",
+          "Support",
+          "Freedom",
+          "Generosity",
+          "Corruption",
+          "Year",
+          "Sex",
+          "Age",
+          "Suicide_no",
+          "Population_PerYear",
+          "Suicide_rate",
+          "Country_year",
+          "HDI_year",
+          "GDP_year",
+          "GDP_capita",
+          "Generation"
+        ],
+        "properties": {
+          "Country": {
+            "$id": "#/properties/Countries/items/properties/Country",
+            "type": "string",
+            "title": "Country",
+            "default": "",
+            "examples": [
+              "Argentina"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Region": {
+            "$id": "#/properties/Countries/items/properties/Region",
+            "type": "string",
+            "title": "Region",
+            "default": "",
+            "examples": [
+              "LATIN AMER. & CARIB"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Population": {
+            "$id": "#/properties/Countries/items/properties/Population",
+            "type": "integer",
+            "title": "Population",
+            "default": 0,
+            "examples": [
+              39921833
+            ]
+          },
+          "Area": {
+            "$id": "#/properties/Countries/items/properties/Area",
+            "type": "integer",
+            "title": "Area",
+            "default": 0,
+            "examples": [
+              2766890
+            ]
+          },
+          "Population_Density": {
+            "$id": "#/properties/Countries/items/properties/Population_Density",
+            "type": "number",
+            "title": "Population_density",
+            "default": 0.0,
+            "examples": [
+              14.4
+            ]
+          },
+          "Coastline": {
+            "$id": "#/properties/Countries/items/properties/Coastline",
+            "type": "number",
+            "title": "Coastline",
+            "default": 0.0,
+            "examples": [
+              0.18
+            ]
+          },
+          "Net_Migration": {
+            "$id": "#/properties/Countries/items/properties/Net_Migration",
+            "type": "number",
+            "title": "Net_migration",
+            "default": 0.0,
+            "examples": [
+              0.61
+            ]
+          },
+          "Infant_Mortality": {
+            "$id": "#/properties/Countries/items/properties/Infant_Mortality",
+            "type": "number",
+            "title": "Infant_mortality",
+            "default": 0.0,
+            "examples": [
+              15.18
+            ]
+          },
+          "GDP": {
+            "$id": "#/properties/Countries/items/properties/GDP",
+            "type": "integer",
+            "title": "GDP",
+            "default": 0,
+            "examples": [
+              11200
+            ]
+          },
+          "Literacy": {
+            "$id": "#/properties/Countries/items/properties/Literacy",
+            "type": "number",
+            "title": "Literacy",
+            "default": 0.0,
+			"maximum" : 100.0,
+			"minimum" : 0.0,
+            "examples": [
+              97.1
+            ]
+          },
+          "Phones": {
+            "$id": "#/properties/Countries/items/properties/Phones",
+            "type": "number",
+            "title": "Phones",
+            "default": 0.0,
+            "examples": [
+              220.4
+            ]
+          },
+          "Arable": {
+            "$id": "#/properties/Countries/items/properties/Arable",
+            "type": "number",
+            "title": "Arable",
+            "default": 0.0,
+			"maximum" : 100.0,
+			"minimum" : 0.0,
+            "examples": [
+              12.31
+            ]
+          },
+          "Crops": {
+            "$id": "#/properties/Countries/items/properties/Crops",
+            "type": "number",
+            "title": "Crops",
+            "default": 0.0,
+			"maximum" : 100.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.48
+            ]
+          },
+          "Other": {
+            "$id": "#/properties/Countries/items/properties/Other",
+            "type": "number",
+            "title": "Other",
+            "default": 0.0,
+			"maximum" : 100.0,
+			"minimum" : 0.0,
+            "examples": [
+              87.21
+            ]
+          },
+          "Climate": {
+            "$id": "#/properties/Countries/items/properties/Climate",
+            "type": "number",
+            "title": "Climate",
+            "default": 0.0,
+			"maximum" : 4,
+			"minimum" : 0,
+            "examples": [
+              3.2
+            ]
+          },
+          "Birthrate": {
+            "$id": "#/properties/Countries/items/properties/Birthrate",
+            "type": "number",
+            "title": "Birthrate",
+            "default": 0.0,
+            "examples": [
+              16.73
+            ]
+          },
+          "Deathrate": {
+            "$id": "#/properties/Countries/items/properties/Deathrate",
+            "type": "number",
+            "title": "Deathrate",
+            "default": 0.0,
+            "examples": [
+              7.55
+            ]
+          },
+          "Agriculture": {
+            "$id": "#/properties/Countries/items/properties/Agriculture",
+            "type": "number",
+            "title": "Agriculture",
+            "default": 0.0,
+			"maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.095
+            ]
+          },
+          "Industry": {
+            "$id": "#/properties/Countries/items/properties/Industry",
+            "type": "number",
+            "title": "Industry",
+            "default": 0.0,
+			"maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.358
+            ]
+          },
+          "Service": {
+            "$id": "#/properties/Countries/items/properties/Service",
+            "type": "number",
+            "title": "Service",
+            "default": 0.0,
+		    "maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.547
+            ]
+          },
+          "Score": {
+            "$id": "#/properties/Countries/items/properties/Score",
+            "type": "number",
+            "title": "Score",
+            "default": 0.0,
+		    "maximum" : 10.0,
+			"minimum" : 1.0,
+            "examples": [
+              6.086
+            ]
+          },
+          "Support": {
+            "$id": "#/properties/Countries/items/properties/Support",
+            "type": "number",
+            "title": "Support",
+            "default": 0.0,
+			"maximum" : 2.0,
+			"minimum" : 0.0,
+            "examples": [
+              1.432
+            ]
+          },
+          "Freedom": {
+            "$id": "#/properties/Countries/items/properties/Freedom",
+            "type": "number",
+            "title": "Freedom",
+            "default": 0.0,
+			"maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.471
+            ]
+          },
+          "Generosity": {
+            "$id": "#/properties/Countries/items/properties/Generosity",
+            "type": "number",
+            "title": "Generosity",
+            "default": 0.0,
+			"maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.066
+            ]
+          },
+          "Corruption": {
+            "$id": "#/properties/Countries/items/properties/Corruption",
+            "type": "number",
+            "title": "Corruption",
+            "default": 0.0,
+			"maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.05
+            ]
+          },
+          "Year": {
+            "$id": "#/properties/Countries/items/properties/Year",
+            "type": "integer",
+            "title": "Year",
+            "default": 2015,
+			"const": 2015,
+            "examples": [
+              2015
+            ]
+          },
+          "Sex": {
+            "$id": "#/properties/Countries/items/properties/Sex",
+            "type": "string",
+            "title": "Sex",
+            "default": "male",
+			"enum" : ["male", "female"],
+            "examples": [
+              "male"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Age": {
+            "$id": "#/properties/Countries/items/properties/Age",
+            "type": "integer",
+            "title": "Age",
+            "default": 15,
+			"enum" : [5, 15, 25, 35, 55, 75],
+            "examples": [
+              75
+            ]
+          },
+          "Suicide_no": {
+            "$id": "#/properties/Countries/items/properties/Suicide_no",
+            "type": "integer",
+            "title": "Suicide_no",
+            "default": 0,
+            "examples": [
+              245
+            ]
+          },
+          "Population_PerYear": {
+            "$id": "#/properties/Countries/items/properties/Population_PerYear",
+            "type": "integer",
+            "title": "Population_peryear",
+            "default": 0,
+            "examples": [
+              712691
+            ]
+          },
+          "Suicide_rate": {
+            "$id": "#/properties/Countries/items/properties/Suicide_rate",
+            "type": "number",
+            "title": "Suicide_rate",
+            "default": 0.0,
+            "examples": [
+              34.38
+            ]
+          },
+          "Country_year": {
+            "$id": "#/properties/Countries/items/properties/Country_year",
+            "type": "string",
+            "title": "Country_year",
+            "default": "",
+            "examples": [
+              "Argentina2015"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "HDI_year": {
+            "$id": "#/properties/Countries/items/properties/HDI_year",
+            "type": "number",
+            "title": "HDI_year",
+            "default": 0.0,
+			"maximum" : 1.0,
+			"minimum" : 0.0,
+            "examples": [
+              0.222
+            ]
+          },
+          "GDP_year": {
+            "$id": "#/properties/Countries/items/properties/GDP_year",
+            "type": "string",
+            "title": "GDP_year",
+            "default": "0",
+            "examples": [
+              "594,749,285,413"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "GDP_capita": {
+            "$id": "#/properties/Countries/items/properties/GDP_capita",
+            "type": "integer",
+            "title": "GDP_capita",
+            "default": 0,
+            "examples": [
+              14981
+            ]
+          },
+          "Generation": {
+            "$id": "#/properties/Countries/items/properties/Generation",
+            "type": "string",
+            "title": "Generation",
+            "default": "Millenials",
+			"enum" : ["Silent", "Generation X", "Boomers", "Millenials", "Generation Z"],
+            "examples": [
+              "Silent"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

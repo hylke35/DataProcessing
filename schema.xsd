@@ -1,0 +1,176 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Countries">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Country" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="Name"/>
+                            <xs:element type="xs:string" name="Region"/>
+                            <xs:element type="xs:integer" name="Population" default="0"/>
+                            <xs:element type="xs:integer" name="Area" default="0"/>
+                            <xs:element type="xs:float" name="Population_Density" default="0.0"/>
+                            <xs:element type="xs:float" name="Coastline" default="0.0"/>
+                            <xs:element type="xs:float" name="Net_Migration" default="0.0"/>
+                            <xs:element type="xs:float" name="Infant_Mortality" default="0.0"/>
+                            <xs:element type="xs:integer" name="GDP" default="0"/>
+                            <xs:element name="Literacy" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="100.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element type="xs:float" name="Phones" default="0.0"/>
+                            <xs:element name="Arable" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="100.0"/>
+									</xs:restriction>
+								</xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Crops" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="100.0"/>
+									</xs:restriction>
+								</xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Other" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="100.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Climate" default="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0"/>
+										<xs:maxInclusive value="4"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element type="xs:float" name="Birthrate" default="0.0"/>
+                            <xs:element type="xs:float" name="Deathrate" default="0.0"/>
+                            <xs:element name="Agriculture" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Industry" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Service" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Score" default="1.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="1.0"/>
+										<xs:maxInclusive value="10.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Support" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="2.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Freedom" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Generosity" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Corruption" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element type="xs:short" name="Year" fixed="2015"/>
+                            <xs:element name="Sex" default="male">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="male"/>
+										<xs:enumeration value="female"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element name="Age" default="15">
+								<xs:simpleType>
+									<xs:restriction base="xs:byte">
+										<xs:enumeration value="75"/>
+										<xs:enumeration value="55"/>
+										<xs:enumeration value="35"/>
+										<xs:enumeration value="25"/>
+										<xs:enumeration value="15"/>
+										<xs:enumeration value="5"/>
+									</xs:restriction>
+								</xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:short" name="Suicide_no" default="0"/>
+                            <xs:element type="xs:int" name="Population_PerYear" default="0"/>
+                            <xs:element type="xs:float" name="Suicide_rate" default="0.0"/>
+                            <xs:element type="xs:string" name="Country_year"/>
+                            <xs:element name="HDI_year" default="0.0">
+								<xs:simpleType>
+									<xs:restriction base="xs:float">
+										<xs:minInclusive value="0.0"/>
+										<xs:maxInclusive value="1.0"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                            <xs:element type="xs:string" name="GDP_year" default="0"/>
+                            <xs:element type="xs:integer" name="GDP_capita" default="0"/>
+                            <xs:element name="Generation" default="Millenials">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Silent"/>
+										<xs:enumeration value="Generation X"/>
+										<xs:enumeration value="Generation Z"/>
+										<xs:enumeration value="Boomers"/>
+										<xs:enumeration value="Millenials"/>
+									</xs:restriction>
+								</xs:simpleType>	
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
